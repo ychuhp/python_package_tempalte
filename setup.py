@@ -22,7 +22,7 @@ def read_long_description(path):
 # @see https://packaging.python.org/guides/packaging-namespace-packages/#native-namespace-packages  # noqa
 setup(
     name='package',
-    version=find_version('axcross/__init__.py'),
+    version=find_version('package/__init__.py'),
     author='Yechan Hong',
     author_email='ychuh@pharmcaad.com',
     url='none',
@@ -58,7 +58,7 @@ setup(
     ],
     entry_points={
       'console_scripts': [
-        'axcross-train = axcross.train:main',
+        'package-train = package.train:main',
       ]
     },
     # test_suite='nose.collector',
